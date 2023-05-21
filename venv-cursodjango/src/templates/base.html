@@ -8,15 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.111.3">
-    <title>Top navbar example · Bootstrap v5.3</title>
+    <title>{% block head_title %}{% endblock %}Curso Django</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-static/">
-
-    
-
-    
-
-<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    {% include "head.css.html" %}
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -160,14 +154,10 @@
 
     
 {% include "navbar.html" %}
-
-<main class="container">
-  <div class="bg-body-tertiary p-5 rounded">
-    <h1>Navbar example</h1>
-    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-    <a class="btn btn-lg btn-primary" href="/docs/5.3/components/navbar/" role="button">View navbar docs &raquo;</a>
-  </div>
-</main>
+{% block jumbotron %}
+{% endblock%}
+{% block content%}
+{% endblock%}
 
 
     <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

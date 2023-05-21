@@ -117,6 +117,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_URL = 'media/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static_pro", "static"
+    #"/var/www/static/",
+]
+
+STATIC_ROOT = "/home/ivandunlap/Documentos/repositorios/CursoDjango/venv-cursodjango/static_env/static_root"
+MEDIA_ROOT = "/home/ivandunlap/Documentos/repositorios/CursoDjango/venv-cursodjango/static_env/media_root"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

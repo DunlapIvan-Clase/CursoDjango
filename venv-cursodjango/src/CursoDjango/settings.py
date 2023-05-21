@@ -120,7 +120,8 @@ STATIC_URL = 'static/'
 STATIC_URL = 'media/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static_pro", "static"
+    BASE_DIR / "static",
+    "/home/ivandunlap/Documentos/repositorios/CursoDjango/venv-cursodjango/src/static_pro/static"
     #"/var/www/static/",
 ]
 
